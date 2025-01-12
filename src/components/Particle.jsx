@@ -13,25 +13,24 @@ export default function Particle() {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-  };
+  const particlesLoaded = (container) => {};
 
   return (
     <>
       {init && (
         <Particles
+          className="-z-30"
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           style={{
             zIndex: -1,
-            
           }}
           options={{
             background: {
-                color: {
-                  value: "#fff",
-                },
+              color: {
+                value: "#fff",
               },
+            },
             fpsLimit: 120,
             interactivity: {
               events: {
